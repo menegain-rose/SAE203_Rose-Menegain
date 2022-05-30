@@ -58,7 +58,6 @@
 import Bouton from '/src/components/icons/Bouton.vue'
 
 export default {
-
         components: { 
             Bouton,
         },
