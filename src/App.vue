@@ -25,7 +25,7 @@
   <footer>
     <section class="flex flex-col items-center text-center bg-HeadFoot text-PrincipalyText">
       <div class="flex items-center">
-        <img class="w-28 h-auto" src="/logofestival.svg" alt="">
+        <img class="h-20 w-auto" src="/logofestival.svg" alt="">
         <h3 class="font-rubik-mono-one text-xl">BONYFEST</h3>
       </div>
         <p class="font-rubik-mono-one font-normal text-lg">15 > 17 juillet</p>
@@ -43,7 +43,6 @@
 </template>
 
 <script>
-import { FilmIcon } from "@heroicons/vue/outline";
 import { MenuIcon } from "@heroicons/vue/outline"
 import Facebook from "/src/components/icons/facebook.vue";
 import Instagram from "/src/components/icons/instagram.vue";
@@ -53,7 +52,7 @@ import Youtube from "/src/components/icons/youtube.vue";
 
 
 export default {
-  components: { FilmIcon, MenuIcon, Facebook, Instagram, Youtube },
+  components: { MenuIcon, Facebook, Instagram, Youtube },
 };
 </script>
 

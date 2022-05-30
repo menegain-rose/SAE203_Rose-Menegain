@@ -1,9 +1,9 @@
 <template>
-  <svg width="2em" height="2em" viewBox="0 0 256 256"><path fill="fill-PrincipalyText" d="M128 80a48 48 0 1 0 48 48a48 48 0 0 0-48-48Zm0 80a32 32 0 1 1 32-32a32.1 32.1 0 0 1-32 32Zm44-132H84a56 56 0 0 0-56 56v88a56 56 0 0 0 56 56h88a56 56 0 0 0 56-56V84a56 56 0 0 0-56-56Zm40 144a40 40 0 0 1-40 40H84a40 40 0 0 1-40-40V84a40 40 0 0 1 40-40h88a40 40 0 0 1 40 40Zm-20-96a12 12 0 1 1-12-12a12 12 0 0 1 12 12Z"></path></svg>
+  <svg width="2em" height="2em" viewBox="0 0 256 256"><path fill="fill-PrincipalyText" d="M128 82a46 46 0 1 0 46 46a46 46 0 0 0-46-46Zm0 80a34 34 0 1 1 34-34a34.1 34.1 0 0 1-34 34Zm44-132H84a54 54 0 0 0-54 54v88a54 54 0 0 0 54 54h88a54 54 0 0 0 54-54V84a54 54 0 0 0-54-54Zm42 142a42 42 0 0 1-42 42H84a42 42 0 0 1-42-42V84a42 42 0 0 1 42-42h88a42 42 0 0 1 42 42Zm-24-96a10 10 0 1 1-10-10a10 10 0 0 1 10 10Z"></path></svg>
 </template>
 
 <script>
 export default {
-  name: 'PhInstagramLogo'
+  name: 'PhInstagramLogoLight'
 }
 </script>
