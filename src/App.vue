@@ -1,6 +1,7 @@
 <template>
   <header class="bg-HeadFoot flex justify-between">
-    <img src="/logofestival.svg" class="h-20 w-auto" alt="LogoFestival">
+    <router-link to="/"><img src="/logofestival.svg" class="h-20 w-auto" alt="LogoFestival"></router-link>
+
     <h1 class="font-rubik-mono-one text-xl text-Color-Bouton">BonyFest</h1>
 
     <div>

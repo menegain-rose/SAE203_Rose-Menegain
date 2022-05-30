@@ -12,7 +12,8 @@ module.exports = {
         "PrincipalyText": "#fef3ec",
         "SecondaryText": "#800d11",
         "terne-red": "#702123",
-        "Dark_Bouton": "#630709"
+        "Dark_Bouton": "#630709",
+        "Black-clear": "#171719"
       },
 
       "fontSize": {
