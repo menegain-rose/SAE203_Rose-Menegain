@@ -10,7 +10,19 @@
     }
 
     h2 {
-        @apply text-xl text-white font-rubik-mono-one;
+        @apply text-xl text-PrincipalyText font-rubik-mono-one;
+    }
+
+    h3 {
+        @apply text-base text-PrincipalyText font-rubik-mono-one
+    }
+
+    h4 {
+        @apply text-base text-SecondaryText font-comfortaa
+    }
+
+    p {
+        @apply text-base text-PrincipalyText font-comfortaa
     }
 
     /* ... */
