@@ -4,14 +4,14 @@
 
 /* Mettre ici les styles "globaux" */
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
+@layer base {
+    h1 {
+        @apply text-2xl;
+    }
 
-h1,
-h2 {
-    color: PrincipalyText;
+    h2 {
+        @apply text-xl text-white font-rubik-mono-one;
+    }
 
+    /* ... */
 }

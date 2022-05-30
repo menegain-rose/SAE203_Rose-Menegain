@@ -1,8 +1,9 @@
 <template>
-  <header class="bg-HeadFoot flex justify-between">
-    <router-link to="/"><img src="/logofestival.svg" class="h-20 w-auto" alt="LogoFestival"></router-link>
-
-    <h1 class="font-rubik-mono-one text-xl text-Color-Bouton">BonyFest</h1>
+  <header class="bg-HeadFoot flex justify-between py-1 px-2">
+    <div>
+      <router-link to="/"><img src="/logofestival.svg" class="h-20 w-auto" alt="LogoFestival"></router-link>
+      <h1 class="font-rubik-mono-one text-xl text-Color-Bouton">BonyFest</h1>
+    </div>
 
     <div>
       <MenuIcon class="h-12 w-12 fill-PrincipalyText stroke-PrincipalyText" />
@@ -23,21 +24,21 @@
 
 
   <footer>
-    <section class="flex flex-col items-center text-center bg-HeadFoot text-PrincipalyText">
+    <section class="flex flex-col items-center text-center bg-HeadFoot text-PrincipalyText pt-4 pb-8">
       <div class="flex items-center">
         <img class="h-20 w-auto" src="/logofestival.svg" alt="">
         <h3 class="font-rubik-mono-one text-xl">BONYFEST</h3>
       </div>
-        <p class="font-rubik-mono-one font-normal text-lg">15 > 17 juillet</p>
-      <div>
-        <Facebook class="fill-PrincipalyText inline-block"></Facebook>
-        <Instagram class="fill-PrincipalyText inline-block"></Instagram>
-        <Youtube class="fill-PrincipalyText inline-block"></Youtube>
+        <p class="font-rubik-mono-one font-normal text-lg my-2">15 > 17 juillet</p>
+      <div class="m-4">
+        <Facebook class="fill-PrincipalyText inline-block mx-2"></Facebook>
+        <Instagram class="fill-PrincipalyText inline-block mx-2"></Instagram>
+        <Youtube class="fill-PrincipalyText inline-block mx-2"></Youtube>
       </div>
       
-      <a href="/MentionsLegals" class="font-comfortaa font-normal text-lg">Mentions légales</a>
-        <a href="/Contact" class="font-comfortaa font-normal text-lg">Contact</a>
-        <p class="font-comfortaa font-normal text-lg">Patenaires</p>
+      <a href="/MentionsLegals" class="font-comfortaa font-normal text-lg my-2">Mentions légales</a>
+        <a href="/Contact" class="font-comfortaa font-normal text-lg my-2">Contact</a>
+        <p class="font-comfortaa font-normal text-lg my-2">Patenaires</p>
     </section>
   </footer>
 </template>
