@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="p-5 pb-10">
     <h2 class="text-2xl">ARTISTES</h2>
     <p>
       Quels artistes on vous proposes durant ses 3 jours au BonyFest !?
@@ -15,8 +15,7 @@
       </div>
       </div>
 
-
-        <section class="">
+        <section class="flex flex-col items-center">
             <article>
                 <card
                     imageartist="/images-artistes-15juillet/KapBambino.png"

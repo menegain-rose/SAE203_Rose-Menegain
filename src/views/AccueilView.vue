@@ -1,6 +1,6 @@
 <template>
-  <main>
-    <h1 class="text-2xl">BIENVENUE AU BONYFEST</h1>
+  <main class="flex flex-col items-center text-center pb-10">
+    <h1 class="text-2xl drop-shadow-2xl shadow-Color-Bouton">BIENVENUE AU BONYFEST</h1>
 
     <img src="/images-home/accueil.png" alt="">
     <h2>15 > 17 juillet</h2>
