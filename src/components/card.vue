@@ -1,10 +1,11 @@
 <template>
     <div>
-        <figure class="flex items-center">
-            <img class="w-150px h-auto object-cover " :src="imageartist" alt="" />
-            <figcaption class="bg-Color-Bouton text-PrincipalyText">
-                <h3 class="m-4 font-comfortaa font-bold text-lg">{{ name }}</h3>
-                <p class="m-4 font-comfortaa font-bold text-lg"> {{ date }}</p>
+        <figure class="mt-10">
+            <img class="h-36 w-auto object-cover " :src="imageartist" alt="image de l'artiste" />
+
+            <figcaption class="bg-Color-Bouton text-PrincipalyText h-36 w-72">
+                <h3 class="p-4 font-rubik-mono-one text-lg">{{ name }}</h3>
+                <p class="m-4 font-raleway text-lg float-right flow-root"> {{ date }}</p>
             </figcaption>
         </figure>
     </div>

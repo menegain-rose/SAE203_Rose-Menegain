@@ -10,7 +10,8 @@ module.exports = {
         "HeadFoot": "#0b0a0a",
         "Background": "#0f0e0e",
         "PrincipalyText": "#fef3ec",
-        "SecondaryText": "#800d11"
+        "SecondaryText": "#800d11",
+        "terne-red": "#702123"
       },
 
       "fontSize": {
