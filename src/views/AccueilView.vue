@@ -14,7 +14,7 @@
     </ul>
     <h2>Nos artistes</h2>
     <Bouton>
-      <slot>Découvrir</slot>
+      <router-link to="/Artistes">Découvrir</router-link>
     </Bouton>
 
     <!-- caroussel -->
