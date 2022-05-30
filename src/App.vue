@@ -1,50 +1,37 @@
 <template>
-  <header>
-    <icon-logo />
-    <FilmIcon class="h-5 w-5 fill-blue-300 stroke-blue-600" />
-    <nav>
-      <RouterLink to="/" class="text-blue-600 underline">Accueil</RouterLink>
-    </nav>
+  <header class="bg-HeadFoot flex justify-between">
+    <img src="/logofestival.svg" class="h-20 w-auto" alt="LogoFestival">
+    <h1 class="font-rubik-mono-one text-xl text-Color-Bouton">BonyFest</h1>
 
-      <header class="bg-black-primary flex justify-between">
-    <img class="w-24 h-auto" src="/images-icones/Logoblanc.svg" alt="">
-    <section>
-      <div  class="w-max ">
-        <Profil class="h-12 w-auto mr-1 inline-block fill-blanc-primary"/> 
-      </div>
-      
-      <!-- menu -->
-      <nav>
-          <div  class="w-max ">
-            <Menu class="h-12 w-auto mr-1 inline-block fill-blanc-primary"/>
-              <div class="text-blanc-primary">
-                <router-link to="/">Accueil</router-link>
-                <router-link to="/Apropos">A propos</router-link>
-                <router-link to="/compteArtiste">Votre Compte</router-link>
-                <router-link to="/Dons">Dons</router-link>
-                <router-link to="/FAQ">FAQ</router-link>
-                <router-link to="/Inscription">Inscription</router-link>
-                <router-link to="/Messagerie">Messagerie</router-link>
-                <router-link to="/MLegal">Mentions légales</router-link>
-                <router-link to="/NosArtistes">Nos Artistes</router-link>
-              </div>
-        </div>
+    <div>
+      <MenuIcon class="h-12 w-12 fill-blue-300 stroke-PrincipalyText" />
+      <nav class="text-PrincipalyText">
+        <RouterLink to="/" class="">Accueil</RouterLink>
+        <RouterLink to="/Billeterie" class="">Billeterie</RouterLink>
+        <RouterLink to="/LeFestival" class="">LeFestival</RouterLink>
+        <RouterLink to="/" class="">Nouveautées</RouterLink>
+        <RouterLink to="/Programme" class="">Programme</RouterLink>
       </nav>
-    </section>
-  </header>
+    </div>
+
   </header>
 
+  <main class="bg-Background">
   <RouterView />
-
+  </main>
   <footer>
 
   </footer>
 </template>
 
 <script>
-import IconLogo from "./components/icons/IconLogo.vue";
 import { FilmIcon } from "@heroicons/vue/outline";
+import { MenuIcon } from "@heroicons/vue/outline"
 export default {
-  components: { IconLogo, FilmIcon },
+  components: { FilmIcon,  MenuIcon },
 };
 </script>
+
+<style>
+
+</style>
