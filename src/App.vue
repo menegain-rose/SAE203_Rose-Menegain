@@ -16,9 +16,12 @@
 
   </header>
 
+
   <main class="bg-Background">
   <RouterView />
   </main>
+
+
   <footer>
 
   </footer>
@@ -33,5 +36,4 @@ export default {
 </script>
 
 <style>
-  @import './assets/styles/yourstyles.css';
 </style>

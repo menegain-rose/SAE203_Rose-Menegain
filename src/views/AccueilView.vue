@@ -25,7 +25,7 @@
     <h2>DECOUVREZ NOTRE PROGRAMME</h2>
     <p>Quel jour votre artiste préféré va-t-il passer ?</p>
     <Bouton>
-      <slot>Découvrir</slot>
+      <router-link to="/Programme">Découvrir</router-link>
     </Bouton>
 
     <h2>Pour ne pas vous perdre</h2>
