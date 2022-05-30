@@ -5,7 +5,7 @@
     <img src="/images-home/accueil.png" alt="">
     <h2>15 > 17 juillet</h2>
     <Bouton>
-      <slot>Billeterie</slot>
+      <router-link to="/Billeterie">Billeterie</router-link>
     </Bouton>
     <ul>
       <li>50 Artistes</li>
@@ -31,7 +31,7 @@
     <h2>Pour ne pas vous perdre</h2>
     <img src="/images-home/carte.png" alt="carte pour s'orrienter">
     <Bouton>
-      <slot>Voir plus</slot>
+      <router-link to="/LeFestival">Voir plus</router-link>
     </Bouton>
 
   </main>
