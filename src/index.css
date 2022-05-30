@@ -6,7 +6,7 @@
 
 @layer base {
     h1 {
-        @apply text-2xl;
+        @apply text-2xl text-PrincipalyText font-rubik-mono-one;
     }
 
     h2 {
@@ -22,6 +22,10 @@
     }
 
     p {
+        @apply text-base text-PrincipalyText font-comfortaa
+    }
+
+    li {
         @apply text-base text-PrincipalyText font-comfortaa
     }
 
