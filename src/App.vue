@@ -8,6 +8,10 @@
   </header>
 
   <RouterView />
+
+  <footer>
+    
+  </footer>
 </template>
 
 <script>
