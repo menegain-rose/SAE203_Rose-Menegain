@@ -1,6 +1,10 @@
 <template>
-  <main>
-    <h1 class="text-2xl">Bonjour</h1>
+  <main class="p-8">
+    <h2 class="text-2xl">Mentions Légales</h2>
+
+
+
+
   </main>
 </template>
 

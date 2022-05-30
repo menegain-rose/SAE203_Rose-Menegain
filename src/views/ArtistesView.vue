@@ -41,11 +41,13 @@
             </article>
 
             <article>
-                <card
-                    imageartist="/images-artistes-15juillet/LeTigre.png"
-                    name="Le tigre"
-                    date="15 juillet"
-                />
+               <router-link to="/PageArtiste">
+                    <card
+                        imageartist="/images-artistes-15juillet/LeTigre.png"
+                        name="Le tigre"
+                        date="15 juillet"
+                    />
+                </router-link>
             </article>
 
             <article>
