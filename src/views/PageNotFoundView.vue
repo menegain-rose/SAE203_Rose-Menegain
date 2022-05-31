@@ -1,6 +1,6 @@
 <template>
 
-    <div class="items-center text-center p-10">
+    <div class="items-center text-center p-5 py-52">
         <p class="m-5">
             Page non trouvée. La page que vous avez demandée n'a pas été trouvée
         </p>
@@ -11,6 +11,7 @@
             Retour à l'accueil 
         </Bouton>
     </div>
+
 </template>
 
 

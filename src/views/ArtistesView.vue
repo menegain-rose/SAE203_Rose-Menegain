@@ -5,7 +5,7 @@
       Quels artistes on vous proposes durant ses 3 jours au BonyFest !?
     </p>
 
-      <div class="flex flex-col border-terne-red border m-5 rounded">
+      <div class="flex flex-col border-terne-red border min max-w-md m-5 rounded">
         <div class="p-2">
         <div class="btn-group">
           <Bouton class="bg-Dark_Bouton m-1">1er Jour</Bouton>
@@ -15,7 +15,7 @@
       </div>
       </div>
 
-        <section class="flex flex-col items-center">
+        <section class=" flex-col object-center items-center grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(300px,1fr))]">
             <article>
                 <card
                     imageartist="/images-artistes-15juillet/KapBambino.png"

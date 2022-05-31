@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-HeadFoot flex justify-between py-1 px-2">
+  <header class="bg-HeadFoot flex justify-between py-1 px-2" v-if="!['PageNotFound'].includes($route.name)">
     <div>
       <router-link to="/"><img src="/logofestival.svg" class="h-20 w-auto" alt="LogoFestival"></router-link>
       <h1 class="font-rubik-mono-one text-sm text-SecondaryText">BonyFest</h1>
@@ -55,7 +55,6 @@
       </nav>
     </div>
 
-
   </header>
 
 
@@ -64,7 +63,7 @@
   </main>
 
 
-  <footer>
+  <footer v-if="!['PageNotFound'].includes($route.name)">
     <section class="flex flex-col items-center text-center bg-HeadFoot text-PrincipalyText pt-4 pb-8">
       <div class="flex items-center">
         <img class="h-20 w-auto" src="/logofestival.svg" alt="">

@@ -8,31 +8,33 @@
       <router-link to="/Billeterie" >Billeterie</router-link>
     </Bouton>
     
-    <div class="items-center text-center mt-24 font-raleway text-2xl text-PrincipalyText">
+    <div class="items-center text-center mt-24 font-raleway text-xl text-PrincipalyText">
       <h5 class="m-4">50 Artistes</h5>
       <h5 class="m-4">3 Scènes</h5>
       <h5 class="m-4">3 Jours</h5>
     </div>
 
-    <div class="bg-Black-clear pt-1">
-      <h2 class="m-8">Nos artistes</h2>
-      <Bouton class=" mr-5">
-        <router-link to="/Artistes">Découvrir</router-link>
-      </Bouton>
-  
-      <!-- caroussel -->
-  
-              <article class="pt-10 flex flex-col items-center">
-                  <card
-                      imageartist="/images-artistes-15juillet/KapBambino.png"
-                      name="Kap bambino"
-                      date="15 juillet"
-                  />
-    <Swipe class="fill-PrincipalyText  "></Swipe>
-              </article>
-  
-      <!-- caroussel -->
+    <div class="bg-Black-clear pt-1 pb-24 my-6">
+      <h2 class="m-6">Nos artistes</h2>
 
+      <div class="flex flex-col items-center">
+        <Bouton>
+          <router-link to="/Artistes">Découvrir</router-link>
+        </Bouton>
+    
+        <!-- caroussel -->
+    
+                <article class="">
+                    <card
+                        imageartist="/images-artistes-15juillet/KapBambino.png"
+                        name="Kap bambino"
+                        date="15 juillet"
+                    />
+                </article>
+    
+        <!-- caroussel -->
+      </div>
+        <Swipe class="fill-PrincipalyText float-right"></Swipe>
     </div>
 
     <img src="/images-home/programme.png" alt="image de concert">
