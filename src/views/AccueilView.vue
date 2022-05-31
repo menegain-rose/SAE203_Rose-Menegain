@@ -24,13 +24,36 @@
     
         <!-- caroussel -->
     
-                <article class="">
-                    <card
-                        imageartist="/images-artistes-15juillet/KapBambino.png"
-                        name="Kap bambino"
-                        date="15 juillet"
-                    />
-                </article>
+<div class="relative rounded-xl overflow-auto">
+
+  <!-- Contents -->
+  <div class="relative w-full flex gap-6 snap-x snap-mandatory overflow-x-auto pb-14 pt-14">
+    <div class="snap-center shrink-0">
+      <div class="shrink-0 w-4 sm:w-48"></div>
+    </div>
+    <div class="snap-center shrink-0 first:pl-8 last:pr-8">
+      <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white" src="/images-artistes-15juillet/KapBambino.png">
+    </div>
+    <div class="snap-center shrink-0 first:pl-8 last:pr-8">
+      <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white" src="/images-artistes-15juillet/BlueStahli.png">
+    </div>
+    <div class="snap-center shrink-0 first:pl-8 last:pr-8">
+      <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white" src="/images-artistes-15juillet/CrystalCastles.png">
+    </div>
+    <div class="snap-center shrink-0 first:pl-8 last:pr-8">
+      <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white" src="/images-artistes-15juillet/LeTigre.png">
+    </div>
+    <div class="snap-center shrink-0 first:pl-8 last:pr-8">
+      <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white" src="/images-artistes-15juillet/LoveFine.png">
+    </div>
+    <div class="snap-center shrink-0 first:pl-8 last:pr-8">
+      <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white" src="/images-artistes-15juillet/RetardOBot.png">
+    </div>
+    <div class="snap-center shrink-0">
+      <div class="shrink-0 w-4 sm:w-48"></div>
+    </div>
+  </div>
+</div>
     
         <!-- caroussel -->
       </div>
@@ -44,9 +67,9 @@
       <router-link to="/Programme">Découvrir</router-link>
     </Bouton>
 
-    <h2>Pour ne pas vous perdre</h2>
+    <h2 class="m-6">Pour ne pas vous perdre</h2>
     <img src="/images-home/carte.png" alt="carte pour s'orrienter">
-    <Bouton>
+    <Bouton class="float-right m">
       <router-link to="/LeFestival">Voir plus</router-link>
     </Bouton>
 
