@@ -1,38 +1,39 @@
 <template>
-  <main class="flex flex-col items-center text-center pb-10">
-    <h1 class="text-2xl drop-shadow-2xl shadow-Color-Bouton">BIENVENUE AU BONYFEST</h1>
+  <main class="pb-10">
+    <h1 class="text-2xl absolute text-center top-40">BIENVENUE AU BONYFEST</h1>
 
     <img src="/images-home/accueil.png" alt="">
-    <h2>15 > 17 juillet</h2>
-    <Bouton>
-      <router-link to="/Billeterie">Billeterie</router-link>
+    <h2 class="m-5 items-center text-center">15 > 17 juillet</h2>
+    <Bouton class="float-right mr-5">
+      <router-link to="/Billeterie" >Billeterie</router-link>
     </Bouton>
     
-    <div>
-      <p>50 Artistes</p>
-      <p>3 Scènes</p>
-      <p>3 Jours</p>
+    <div class="items-center text-center mt-24 font-raleway text-2xl text-PrincipalyText">
+      <h5 class="m-4">50 Artistes</h5>
+      <h5 class="m-4">3 Scènes</h5>
+      <h5 class="m-4">3 Jours</h5>
     </div>
 
-    <h2>Nos artistes</h2>
-    <Bouton>
-      <router-link to="/Artistes">Découvrir</router-link>
-    </Bouton>
+    <div class="bg-Black-clear pt-1">
+      <h2 class="m-8">Nos artistes</h2>
+      <Bouton class=" mr-5">
+        <router-link to="/Artistes">Découvrir</router-link>
+      </Bouton>
+  
+      <!-- caroussel -->
+  
+              <article class="pt-10 flex flex-col items-center">
+                  <card
+                      imageartist="/images-artistes-15juillet/KapBambino.png"
+                      name="Kap bambino"
+                      date="15 juillet"
+                  />
+    <Swipe class="fill-PrincipalyText  "></Swipe>
+              </article>
+  
+      <!-- caroussel -->
 
-    <!-- caroussel -->
-
-            <article>
-                <card
-                    imageartist="/images-artistes-15juillet/KapBambino.png"
-                    name="Kap bambino"
-                    date="15 juillet"
-                />
-            </article>
-
-    <!-- caroussel -->
-
-    <Swipe class="fill-PrincipalyText"></Swipe>
-
+    </div>
 
     <img src="/images-home/programme.png" alt="image de concert">
     <h2>DECOUVREZ NOTRE PROGRAMME</h2>
