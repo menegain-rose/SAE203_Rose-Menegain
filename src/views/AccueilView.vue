@@ -3,12 +3,14 @@
     <h1 class="text-2xl absolute text-center top-40">BIENVENUE AU BONYFEST</h1>
 
     <img src="/images-home/accueil.png" alt="">
-    <h2 class="m-5 items-center text-center">15 > 17 juillet</h2>
-    <Bouton class="float-right mr-5">
-      <router-link to="/Billeterie" >Billeterie</router-link>
-    </Bouton>
+    <div class="items-center text-center">
+      <h2 class="m-5">15 > 17 juillet</h2>
+      <Bouton class="">
+        <router-link to="/Billeterie" >Billeterie</router-link>
+      </Bouton>
+    </div>
     
-    <div class="items-center text-center mt-24 font-raleway text-2xl text-PrincipalyText">
+    <div class="items-center text-center mt-5 font-raleway text-2xl text-PrincipalyText">
       <h5 class="m-4">50 Artistes</h5>
       <h5 class="m-4">3 Scènes</h5>
       <h5 class="m-4">3 Jours</h5>
@@ -62,19 +64,21 @@
 
     <div>
       <img src="/images-home/programme.png" alt="image de concert">
-      <h2>DECOUVREZ NOTRE PROGRAMME</h2>
-      <p>Quel jour votre artiste préféré va-t-il passer ?</p>
-      <Bouton class="absolute right-5 -mt-[500px]">
+      <h2 class="absolute left-5 -mt-[600px]">DECOUVREZ NOTRE PROGRAMME</h2>
+      <p class="absolute left-9 -mt-[540px]">Quel jour votre artiste préféré va-t-il passer ?</p>
+      <Bouton class="absolute left-40 -mt-[500px]">
         <router-link to="/Programme">Découvrir</router-link>
       </Bouton>
     </div>
 
     <div>
       <h2 class="m-6">Pour ne pas vous perdre</h2>
-      <img src="/images-home/carte.png" alt="carte pour s'orrienter">
-      <Bouton class="absolute right-5 my-2">
-        <router-link to="/LeFestival">Voir plus</router-link>
-      </Bouton>
+      <div class="flex flex-col items-center text-center ">
+        <img src="/images-home/carte.png" alt="carte pour s'orrienter">
+        <Bouton class="my-2">
+          <router-link to="/LeFestival">Voir plus</router-link>
+        </Bouton>
+      </div>
     </div>
 
   </main>
