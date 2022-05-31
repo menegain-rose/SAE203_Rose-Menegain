@@ -8,7 +8,7 @@
       <router-link to="/Billeterie" >Billeterie</router-link>
     </Bouton>
     
-    <div class="items-center text-center mt-24 font-raleway text-xl text-PrincipalyText">
+    <div class="items-center text-center mt-24 font-raleway text-2xl text-PrincipalyText">
       <h5 class="m-4">50 Artistes</h5>
       <h5 class="m-4">3 Scènes</h5>
       <h5 class="m-4">3 Jours</h5>
