@@ -1,11 +1,11 @@
 <template>
   <main class="p-5 pb-10 "> 
     <h2 class="text-2xl">ARTISTES</h2>
-    <h3 class="mt-6">
-      Forfaits 3 ou 2 jours
-    </h3>
-    <section class="flex-col object-center items-center grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(300px,1fr))]">
+    <section class="flex-col items-center grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(300px,1fr))]">
       <article>
+        <h3 class="mt-6">
+          Forfaits 3 ou 2 jours
+        </h3>
         <billet
             price="150"
             text="Forfait 3 jours"
@@ -19,11 +19,12 @@
         />
       </article>
 
-      <h3 class="mt-6">
-        Forfaits jours
-      </h3>
 
       <article>
+        <h3 class="mt-6">
+          Forfaits jours
+        </h3> 
+
         <billet
             price="49"
             text="Vendredi 15 juillet"
@@ -43,11 +44,11 @@
         />
       </article>
 
-      <h3 class="mt-6">
-        Forfaits réduits
-      </h3>
 
       <article>
+        <h3 class="mt-6">
+          Forfaits réduits
+        </h3>
         <billet
             price="130"
             text="Forfait Réduit 3 jours"
@@ -61,11 +62,11 @@
         />
       </article>
 
-      <h3 class="mt-6">
-        Forfaits Packs
-      </h3>
 
       <article>
+        <h3 class="mt-6">
+          Forfaits Packs
+        </h3>
         <billet
             price="150"
             text="Forfait pack 2 pers. &   2 jours"
