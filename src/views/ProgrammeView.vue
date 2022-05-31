@@ -15,73 +15,149 @@
     <ul>
       <li>
         <h4>Kap Bambino</h4>
-        <p>Vendredi 15 juillet, 19h 
+        <p>
+          Vendredi 15 juillet, 19h 
           Grande scène
-          Musique électronique | Bordeaux</p>
+          Musique électronique | Bordeaux
+        </p>
+      </li>
+
+      <li>
+        <h4>Crystal Castles</h4>
+        <p>
+          Vendredi 15 juillet, 20h
+          Scène Defburn
+          Musique électronique | Bordeaux
+      </p>
+      </li>
+
+      <li>
+        <h4>Le Tigre</h4>
+        <p>
+          Vendredi 15 juillet, 19h 
+          Grande scène
+          Musique électronique | Bordeaux
+        </p>
+      </li>
+
+      <li>
+        <h4>Terror Visions</h4>
+        <p>
+          Vendredi 15 juillet, 23h
+          Grande scène
+          Musique électronique | Bordeaux
+      </p>
+      </li>
+
+      <li>
+        <h4>Love-Fine</h4>
+        <p>
+          Vendredi 15 juillet, 22h
+          Petite scène
+          Musique électronique | Bordeaux
+        </p>
+      </li>
+
+      <li>
+        <h4>Blue Stahli</h4>
+        <p>
+          Vendredi 15 juillet, 21h
+          Petite scène
+          Musique électronique | Bordeaux
+      </p>
+      </li>
+
+      <li>
+        <h4>Retard-O-Bot</h4>
+        <p>
+          Vendredi 15 juillet, 21h30
+          Scène defburn
+          Musique électronique | Bordeaux
+        </p>
+      </li>
+
+      <li>
+        <h4>Tying Tiffany</h4>
+        <p>
+          Vendredi 15 juillet
+          Scène defburn, 1h
+          Musique électronique | Bordeaux
+      </p>
       </li>
 
       <li>
         <h4>Kap Bambino</h4>
-        <p>Vendredi 15 juillet, 19h 
+        <p>
+          Vendredi 15 juillet, 19h 
           Grande scène
-          Musique électronique | Bordeaux</p>
+          Musique électronique | Bordeaux
+        </p>
       </li>
 
       <li>
-        <h4>Kap Bambino</h4>
-        <p>Vendredi 15 juillet, 19h 
-          Grande scène
-          Musique électronique | Bordeaux</p>
+        <h4>Crystal Castles</h4>
+        <p>
+          Vendredi 15 juillet, 20h
+          Scène Defburn
+          Musique électronique | Bordeaux
+      </p>
       </li>
 
       <li>
-        <h4>Kap Bambino</h4>
-        <p>Vendredi 15 juillet, 19h 
+        <h4>Le Tigre</h4>
+        <p>
+          Vendredi 15 juillet, 19h 
           Grande scène
-          Musique électronique | Bordeaux</p>
+          Musique électronique | Bordeaux
+        </p>
       </li>
 
       <li>
-        <h4>Kap Bambino</h4>
-        <p>Vendredi 15 juillet, 19h 
+        <h4>Terror Visions</h4>
+        <p>
+          Vendredi 15 juillet, 23h
           Grande scène
-          Musique électronique | Bordeaux</p>
+          Musique électronique | Bordeaux
+      </p>
       </li>
 
       <li>
-        <h4>Kap Bambino</h4>
-        <p>Vendredi 15 juillet, 19h 
-          Grande scène
-          Musique électronique | Bordeaux</p>
-      </li>
-
-            <li>
-        <h4>Kap Bambino</h4>
-        <p>Vendredi 15 juillet, 19h 
-          Grande scène
-          Musique électronique | Bordeaux</p>
+        <h4>Love-Fine</h4>
+        <p>
+          Vendredi 15 juillet, 22h
+          Petite scène
+          Musique électronique | Bordeaux
+        </p>
       </li>
 
       <li>
-        <h4>Kap Bambino</h4>
-        <p>Vendredi 15 juillet, 19h 
-          Grande scène
-          Musique électronique | Bordeaux</p>
-      </li>
-
-            <li>
-        <h4>Kap Bambino</h4>
-        <p>Vendredi 15 juillet, 19h 
-          Grande scène
-          Musique électronique | Bordeaux</p>
+        <h4>Blue Stahli</h4>
+        <p>
+          Vendredi 15 juillet, 21h
+          Petite scène
+          Musique électronique | Bordeaux
+      </p>
       </li>
 
       <li>
-        <h4>Kap Bambino</h4>
-        <p>Vendredi 15 juillet, 19h 
-          Grande scène
-          Musique électronique | Bordeaux</p>
+        <h4>Retard-O-Bot</h4>
+        <p>
+          Vendredi 15 juillet, 21h30
+          Scène defburn
+          Musique électronique | Bordeaux
+        </p>
       </li>
+
+      <li>
+        <h4>Tying Tiffany</h4>
+        <p>
+          Vendredi 15 juillet
+          Scène defburn, 1h
+          Musique électronique | Bordeaux
+      </p>
+      </li>
+
+
 
 
 
