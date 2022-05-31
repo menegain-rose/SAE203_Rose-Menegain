@@ -2,7 +2,7 @@
   <main class="p-5 pb-10 "> 
     <h2 class="text-2xl">ARTISTES</h2>
     <section class="flex-col items-center grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(300px,1fr))]">
-      <article>
+      <article class="mx-3">
         <h3 class="mt-6">
           Forfaits 3 ou 2 jours
         </h3>
@@ -20,7 +20,7 @@
       </article>
 
 
-      <article>
+      <article class="mx-3">
         <h3 class="mt-6">
           Forfaits jours
         </h3> 
@@ -45,7 +45,7 @@
       </article>
 
 
-      <article>
+      <article class="mx-3">
         <h3 class="mt-6">
           Forfaits réduits
         </h3>
@@ -63,7 +63,7 @@
       </article>
 
 
-      <article>
+      <article class="mx-3">
         <h3 class="mt-6">
           Forfaits Packs
         </h3>
