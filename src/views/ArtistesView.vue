@@ -5,7 +5,7 @@
       Quels artistes on vous proposes durant ses 3 jours au BonyFest !?
     </p>
 
-      <div class="flex flex-col border-terne-red border min max-w-md m-5 rounded">
+      <div class="flex flex-col border-terne-red border min max-w-[401px] m-5 rounded">
         <div class="p-2">
         <div class="btn-group">
           <Bouton class="bg-Dark_Bouton m-1">1er Jour</Bouton>

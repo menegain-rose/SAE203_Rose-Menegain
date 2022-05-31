@@ -1,5 +1,5 @@
 <template>
-  <main class="pb-10">
+  <main class="pb-20">
     <h1 class="text-2xl absolute text-center top-40">BIENVENUE AU BONYFEST</h1>
 
     <img src="/images-home/accueil.png" alt="">
@@ -60,18 +60,22 @@
         <Swipe class="fill-PrincipalyText float-right"></Swipe>
     </div>
 
-    <img src="/images-home/programme.png" alt="image de concert">
-    <h2>DECOUVREZ NOTRE PROGRAMME</h2>
-    <p>Quel jour votre artiste préféré va-t-il passer ?</p>
-    <Bouton>
-      <router-link to="/Programme">Découvrir</router-link>
-    </Bouton>
+    <div>
+      <img src="/images-home/programme.png" alt="image de concert">
+      <h2>DECOUVREZ NOTRE PROGRAMME</h2>
+      <p>Quel jour votre artiste préféré va-t-il passer ?</p>
+      <Bouton class="absolute right-5 -mt-[500px]">
+        <router-link to="/Programme">Découvrir</router-link>
+      </Bouton>
+    </div>
 
-    <h2 class="m-6">Pour ne pas vous perdre</h2>
-    <img src="/images-home/carte.png" alt="carte pour s'orrienter">
-    <Bouton class="float-right m">
-      <router-link to="/LeFestival">Voir plus</router-link>
-    </Bouton>
+    <div>
+      <h2 class="m-6">Pour ne pas vous perdre</h2>
+      <img src="/images-home/carte.png" alt="carte pour s'orrienter">
+      <Bouton class="absolute right-5 my-2">
+        <router-link to="/LeFestival">Voir plus</router-link>
+      </Bouton>
+    </div>
 
   </main>
 </template>
