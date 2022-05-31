@@ -1,9 +1,9 @@
 <template>
-  <main>
+  <main class="py-10">
     <h2 class="text-2xl">Le Tigre</h2>
-    <img src="/images-tigre/Tigre.png" alt="">
+    <img class="my-4" src="/images-tigre/Tigre.png" alt="photo du groupe Le Tigre">
     <h3>Vendredi 15 juillet</h3>
-    <p>
+    <p class="my-4" >
       Punk rock, dance-punk, rock indépendant, electroclash. <br>
       Un groupe originaire de New-York et composé de Kathleen Hanna, Johanna Fateman et JD Samson.
     </p>
