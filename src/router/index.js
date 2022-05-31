@@ -8,6 +8,7 @@ import MentionsLegalsView from '../views/MentionsLegalsView.vue'
 import PageArtisteView from '../views/PageArtisteView.vue'
 import ProgrammeView from '../views/ProgrammeView.vue'
 import PageNotFoundView from '../views/PageNotFoundView.vue'
+import GuideDeStyleView from '../views/GuideDeStyleView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -20,7 +21,8 @@ const router = createRouter({
     { path: '/MentionsLegals', name: 'MentionsLegals', component: MentionsLegalsView },
     { path: '/PageArtiste', name: 'PageArtiste', component: PageArtisteView },
     { path: '/Programme', name: 'Programme', component: ProgrammeView },
-    { path: '/:PageNotFound(.*)', name: 'PageNotFound', component: PageNotFoundView }
+    { path: '/:PageNotFound(.*)', name: 'PageNotFound', component: PageNotFoundView },
+    { path: '/GuideDeStyle', name: 'GuideDeStyle', component: GuideDeStyleView }
     // ici les autre routes
   ]
 })
