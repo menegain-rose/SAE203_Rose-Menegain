@@ -14,15 +14,10 @@
 
 
         <form>
-          <h6>Nouveau pays</h6>
           <div class="input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text">Nom</span>
-            </div>
+              <p class="input-group-text">Nom</p>
             <input type="text" class="form-control" v-model='nom' required />
-            <button class="btn btn-light" type="button" @click='createArtistes()' title="Création">
-              <i class="fa fa-save fa-lg"></i>
-            </button>
+              <Save class="btn btn-light bg-Color-Bouton fill-PrincipalyText rounded-3xl inline-block" type="button" @click='createArtistes()' title="Création"></Save>
           </div>
         </form>
 
@@ -196,6 +191,7 @@ import {
     onSnapshot, 
     orderBy
     } from 'https://www.gstatic.com/firebasejs/9.7.0/firebase-firestore.js'
+import Save from "../components/icons/Save.vue";
 
 
 export default {
@@ -209,8 +205,9 @@ export default {
   },
 
     components: {
-    Bouton
-    }, 
+    Bouton,
+    Save
+}, 
 
   computed:{
     // Tri des pays par nom en ordre croissant
