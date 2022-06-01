@@ -15,10 +15,18 @@
 
 
 
-
-
-
-
+        <form>
+          <h6>Nouveau pays</h6>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Nom</span>
+            </div>
+            <input type="text" class="form-control" v-model='nom' required />
+            <button class="btn btn-light" type="button" @click='createPays()' title="Création">
+              <i class="fa fa-save fa-lg"></i>
+            </button>
+          </div>
+        </form>
 
 
 
