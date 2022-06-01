@@ -15,7 +15,7 @@
         Espace concerts
       </h2>
       <p class="my-3">
-        Nous vous offrons 3 scènes de concerts, qui pourrons accueillirs vos artistes préférés durant ses 3 jours !
+        Nous vous offrons 3 scènes de concerts, qui pourrons accueillir vos artistes préférés durant ses 3 jours !
       </p>
       <img class="mt-3 mb-8" src="/images-festival/concert.png" alt="Photo d'un concert">
     </div>
@@ -36,7 +36,7 @@
       </h2>
       <p class="my-3">
         Une petite faim, une petite soif ? Pas de panique des bars sont sur notre espace !
-        Vous y retrouverez nourriture (burger, sandwichs, hot dogs...), et boissons fraiches (bières, eau, soda....).
+        Vous y retrouverez nourriture (burgers, sandwichs, hot dogs...), et boissons fraiches (bières, eau, sodas....).
       </p>
       <img class="mt-3 mb-8" src="/images-festival/camping.png" alt="Photo de camping">
     </div>
@@ -47,7 +47,7 @@
       </h2>
       <p class="my-3">
         Nous vous offrons bien évidemment la possibilitée de vous poser sur notre espace camping durant ses 3 jours avec caravan, voiture, ou tente ! 
-        Peu importe vous êtes les bienvenue !
+        Peu importe vous êtes les bienvenues !
       </p>
       <img class="mt-3 mb-6" src="/images-festival/bar.png" alt="Photo d'un hot dogs">
     </div>

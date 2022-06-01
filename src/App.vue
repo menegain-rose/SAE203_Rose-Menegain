@@ -78,7 +78,7 @@
       
       <a href="/MentionsLegals" class="font-comfortaa font-normal text-lg my-2">Mentions légales</a>
         <a href="/Contact" class="font-comfortaa font-normal text-lg my-2">Contact</a>
-        <p class="font-comfortaa font-normal text-lg my-2">Patenaires</p>
+        <p class="font-comfortaa font-normal text-lg my-2">Partenaires</p>
     </section>
   </footer>
 </template>
