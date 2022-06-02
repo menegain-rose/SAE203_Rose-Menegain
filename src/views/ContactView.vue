@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="p-8">
     <h2 class="text-2xl">Contact</h2>
 
       <div class="pt-0 pb-3">

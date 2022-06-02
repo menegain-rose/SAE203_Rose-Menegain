@@ -1,5 +1,5 @@
 <template>
-  <main class="p-5 pb-10">
+  <main class="p-8 pb-10">
     <h2 class="text-2xl">ARTISTES</h2>
     <p>
       Quels artistes on vous proposes durant ses 3 jours au BonyFest !?

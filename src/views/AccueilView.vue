@@ -1,5 +1,5 @@
 <template>
-  <main class="pb-20">
+  <main class="pb-20 p-8">
     <h1 class="text-2xl absolute text-center top-40">BIENVENU AU BONYFEST</h1>
 
     <img src="/images-home/accueil.png" alt="">

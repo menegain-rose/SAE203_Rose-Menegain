@@ -1,5 +1,5 @@
 <template>
-  <main class="py-10">
+  <main class="py-10 px-8">
     <h2 class="text-2xl">Le Tigre</h2>
     <img class="my-4" src="/images-tigre/Tigre.png" alt="photo du groupe Le Tigre">
     <h3>Vendredi 15 juillet</h3>

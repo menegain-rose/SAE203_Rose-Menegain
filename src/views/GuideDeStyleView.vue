@@ -1,5 +1,5 @@
 <template>
-    <main class="flex flex-col items-center text-center">
+    <main class="flex flex-col items-center text-center p-8">
         <h1>Style guide</h1>
         <div>
             <h2 class="pt-10 pb-4">Les différentes tailles de polices</h2>

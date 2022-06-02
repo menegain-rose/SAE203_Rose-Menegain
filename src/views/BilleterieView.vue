@@ -1,5 +1,5 @@
 <template>
-  <main class="p-5 pb-10 "> 
+  <main class="p-8 pb-10 "> 
     <h2 class="text-2xl">ARTISTES</h2>
     <section class="flex-col items-center grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(300px,1fr))]">
       <article class="mx-3">
