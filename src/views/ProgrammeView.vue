@@ -14,18 +14,16 @@
 
 
         <form @submit.prevent="createArtistes">
-          <div class="input-group">
-              <p class="input-group-text">Nom</p>
-            <input type="text" class="form-control" v-model='Nom' required />
-              <Save class="btn btn-light bg-Color-Bouton fill-PrincipalyText rounded-3xl inline-block" type="button" @click='createArtistes()' title="Création"></Save>
+          <div>
+              <p >Nom</p>
+            <input type="text"  v-model='Nom' required />
+              <Save class=" bg-Color-Bouton fill-PrincipalyText rounded-3xl inline-block" type="button" @click='createArtistes()' title="Création"></Save>
           </div>
           
           <div class="my-4 text-center font-bree-serif text-2xl text-white" v-for="Artistes in listeArtistes" :key="Artistes.id">
           <p>{{ Artistes.Nom }}</p>
-          <img class="preview img-fluid" :src="imageData" />
-          <input type="file" class="custom-file-input" ref="file" id="file" 
-                                    @change="previewImage"
-                                    >
+          <img :src="imageData" />
+          <input type="file" ref="file" id="file" @change="previewImage">
           </div>
         </form>
 
@@ -253,7 +251,7 @@ console.log("Liste des Artistes", this.listeArtistes);
             // Mise à jour de la photo du participant
             this.file = this.$refs.file.files[0];
             // Récupérer le nom du fichier pour la photo du participant
-            this.participant.photo = this.file.name;
+            this.Artistes.Image = this.file.Nom;
             // Reference to the DOM input element
             // Reference du fichier à prévisualiser
             var input = event.target;
@@ -278,7 +276,7 @@ console.log("Liste des Artistes", this.listeArtistes);
             // Obtenir storage Firebase
             const storage = getStorage();
             // Référence de l'image à uploader
-            const refStorage = ref(storage, 'Artistes/'+this.Artistes.photo);
+            const refStorage = ref(storage, 'Artistes/'+this.Artistes.Image);
             // Upload de l'image sur le Cloud Storage
             await uploadString(refStorage, this.imageData, 'data_url').then((snapshot) => {
                 console.log('Uploaded a base64 string');
