@@ -25,7 +25,7 @@
         </form>
 
           <input type="text" v-model="filter"/>
-          <Bouton class="inline-block mt-2 mb-6" type="button"  title="Recherche">
+          <Bouton class="mt-2 mb-6" type="button"  title="Recherche">
               Recherche
           </Bouton>   
 
