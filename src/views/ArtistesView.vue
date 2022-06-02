@@ -19,7 +19,7 @@
         <section class=" flex-col object-center items-center grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(300px,1fr))]">
             <article>
                 <card
-                    imageartist="/images-artistes-15juillet/KapBambino.png"
+                    imageartist="/images-artistes-15juillet/KapBambino.jpg"
                     name="Kap bambino"
                     date="15 juillet"
                 />
@@ -27,7 +27,7 @@
 
             <article>
                 <card
-                    imageartist="/images-artistes-15juillet/BlueStahli.png"
+                    imageartist="/images-artistes-15juillet/BlueStahli.jpg"
                     name="Blue Stahli"
                     date="15 juillet"
                 />
@@ -35,7 +35,7 @@
 
             <article>
                 <card
-                    imageartist="/images-artistes-15juillet/CrystalCastles.png"
+                    imageartist="/images-artistes-15juillet/CrystalCastles.jpg"
                     name="Crystal Castles"
                     date="15 juillet"
                 />
@@ -44,7 +44,7 @@
             <article>
                <router-link to="/PageArtiste">
                     <card
-                        imageartist="/images-artistes-15juillet/LeTigre.png"
+                        imageartist="/images-artistes-15juillet/LeTigre.jpg"
                         name="Le tigre"
                         date="15 juillet"
                     />
@@ -53,7 +53,7 @@
 
             <article>
                 <card
-                    imageartist="/images-artistes-15juillet/LoveFine.png"
+                    imageartist="/images-artistes-15juillet/LoveFine.jpg"
                     name="LoveFine"
                     date="15 juillet"
                 />
@@ -61,7 +61,7 @@
 
             <article>
                 <card
-                    imageartist="/images-artistes-15juillet/RetardOBot.png"
+                    imageartist="/images-artistes-15juillet/RetardOBot.jpg"
                     name="Retard O Bot"
                     date="15 juillet"
                 />
@@ -69,7 +69,7 @@
 
             <article>
                 <card
-                    imageartist="/images-artistes-15juillet/TerrorVisions.png"
+                    imageartist="/images-artistes-15juillet/TerrorVisions.jpg"
                     name="Terror Visions"
                     date="15 juillet"
                 />
@@ -77,7 +77,7 @@
 
             <article>
                 <card
-                    imageartist="/images-artistes-15juillet/TyingTiffany.png"
+                    imageartist="/images-artistes-15juillet/TyingTiffany.jpg"
                     name="Tying Tiffany"
                     date="15 juillet"
                 />

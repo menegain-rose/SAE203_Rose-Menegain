@@ -34,22 +34,22 @@
       <div class="shrink-0 w-4 sm:w-48"></div>
     </div>
     <div class="snap-center shrink-0 first:pl-8 last:pr-8">
-      <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white" src="/images-artistes-15juillet/KapBambino.png">
+      <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white" src="/images-artistes-15juillet/KapBambino.jpg">
     </div>
     <div class="snap-center shrink-0 first:pl-8 last:pr-8">
-      <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white" src="/images-artistes-15juillet/BlueStahli.png">
+      <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white" src="/images-artistes-15juillet/BlueStahli.jpg">
     </div>
     <div class="snap-center shrink-0 first:pl-8 last:pr-8">
-      <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white" src="/images-artistes-15juillet/CrystalCastles.png">
+      <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white" src="/images-artistes-15juillet/CrystalCastles.jpg">
     </div>
     <div class="snap-center shrink-0 first:pl-8 last:pr-8">
-      <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white" src="/images-artistes-15juillet/LeTigre.png">
+      <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white" src="/images-artistes-15juillet/LeTigre.jpg">
     </div>
     <div class="snap-center shrink-0 first:pl-8 last:pr-8">
-      <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white" src="/images-artistes-15juillet/LoveFine.png">
+      <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white" src="/images-artistes-15juillet/LoveFine.jpg">
     </div>
     <div class="snap-center shrink-0 first:pl-8 last:pr-8">
-      <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white" src="/images-artistes-15juillet/RetardOBot.png">
+      <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white" src="/images-artistes-15juillet/RetardOBot.jpg">
     </div>
     <div class="snap-center shrink-0">
       <div class="shrink-0 w-4 sm:w-48"></div>
