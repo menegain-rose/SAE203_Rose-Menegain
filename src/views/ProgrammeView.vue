@@ -20,8 +20,9 @@
               <Save class="btn btn-light bg-Color-Bouton fill-PrincipalyText rounded-3xl inline-block" type="button" @click='createArtistes()' title="Création"></Save>
           </div>
         </form>
-        <div class="my-10 text-center font-bree-serif text-2xl text-white" v-for="Artistes in listeArtistes" :key="Artistes.id"></div>
+        <div class="my-4 text-center font-bree-serif text-2xl text-white" v-for="Artistes in listeArtistes" :key="Artistes.id">
         <p>{{ Artistes.Nom }}</p>
+        </div>
         
 
 
