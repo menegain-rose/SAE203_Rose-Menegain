@@ -76,8 +76,8 @@
         <Youtube class="fill-PrincipalyText inline-block mx-2"></Youtube>
       </div>
       
-      <a href="/MentionsLegals" class="font-comfortaa font-normal text-lg my-2">Mentions légales</a>
-        <a href="/Contact" class="font-comfortaa font-normal text-lg my-2">Contact</a>
+      <router-link to="/MentionsLegals" class="font-comfortaa font-normal text-lg my-2">Mentions légales</router-link>
+      <router-link to="/Contact" class="font-comfortaa font-normal text-lg my-2">Contact</router-link>
         <p class="font-comfortaa font-normal text-lg my-2">Partenaires</p>
     </section>
   </footer>

@@ -23,8 +23,6 @@
         <div class="my-4 text-center font-bree-serif text-2xl text-white" v-for="Artistes in listeArtistes" :key="Artistes.id">
         <p>{{ Artistes.Nom }}</p>
         </div>
-        
-
 
       <ul>
         <li>
