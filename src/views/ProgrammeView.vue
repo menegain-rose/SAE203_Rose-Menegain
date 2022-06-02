@@ -13,7 +13,43 @@
         </div>
 
 
-        <form @submit.prevent="createArtistes">
+
+
+        <form class="py-3">
+            <div>
+            <input type="text" v-model='Nom' required />
+            <Bouton class="mx-2 items-center" type="button" @click='createArtistes()' title="Créé">
+                Créé
+            </Bouton>
+            </div>
+        </form>
+
+          <input type="text" v-model="filter"/>
+          <Bouton class="inline-block mt-2 mb-6" type="button"  title="Recherche">
+              Recherche
+          </Bouton>   
+
+        <form v-for="Artistes in filterByName" :key="Artistes.id">
+          <div>
+              <input type="text" class="mx-2 my-2" v-model='Artistes.Nom' required />
+              <Bouton type="button" class="mx-2 my-2" @click="updateArtistes(Artistes)" title="Modifier">
+              Modifier
+              </Bouton>
+              <Bouton type="button" @click="deleteArtistes(Artistes)" title="Supprimer">
+              Supprimer
+              </Bouton>
+          </div>
+        </form>
+
+
+
+
+
+
+
+
+
+    <!--    <form @submit.prevent="createArtistes"> 
           <div>
               <p >Nom</p>
             <input type="text"  v-model='Nom' required />
@@ -22,14 +58,15 @@
           
           <div class="my-4 text-center font-bree-serif text-2xl text-white" v-for="Artistes in listeArtistes" :key="Artistes.id">
           <p>{{ Artistes.Nom }}</p>
-          <img :src="imageData" />
-          <input type="file" ref="file" id="file" @change="previewImage">
+          <img v-bind:src="Artistes.Image" />
+
+        <input type="file" ref="file" id="file" @change="previewImage"> 
           </div>
-        </form>
+        </form> --> 
 
 
 
-      <ul>
+      <ul class="mt-14 mb-5">
         <li>
           <h4>Kap Bambino</h4>
           <p>
@@ -183,116 +220,110 @@
 </template>
 
 <script>
-import { getFirestore, collection, getDocs } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-firestore.js";
+import { getAuth, signInWithEmailAndPassword, signOut, onAuthStateChanged } from 'https://www.gstatic.com/firebasejs/9.7.0/firebase-auth.js'
 import Save from "../components/icons/Save.vue";
 import Bouton from '/src/components/icons/Bouton.vue'
 
-    import { 
-        getStorage,             // Obtenir le Cloud Storage
-        ref,                    // Pour créer une référence à un fichier à uploader
-        getDownloadURL,         // Permet de récupérer l'adress complète d'un fichier du Storage
-        uploadString,           // Permet d'uploader sur le Cloud Storage une image en Base64
-    } from 'https://www.gstatic.com/firebasejs/9.7.0/firebase-storage.js'
 
-export default {
-  data() {
-    return {
-      Nom: null,
-      message: null,
-      listeArtistes: [],
-      imageData: null,
-    };
-  },
+import { 
+    getFirestore, 
+    collection, 
+    doc, 
+    getDocs, 
+    addDoc, 
+    updateDoc, 
+    deleteDoc, 
+    onSnapshot } from 'https://www.gstatic.com/firebasejs/9.7.0/firebase-firestore.js'
 
-  components: {
-    Bouton,
-    Save
-  }, 
-  mounted() {
-    this.getArtistes();
-  },
-  methods: {
-    async getArtistes() {
-      const firestore = getFirestore();
-      const dbArtistes = collection(firestore, "Artistes");
-      const query = await getDocs(dbArtistes);
-      query.forEach((doc) => {
-        let Artistes = {
-          id: doc.id,
-          Nom: doc.data().Nom,
-        };
-        this.listeArtistes.push(Artistes);
-      });
-    },
-  },
 
-async getArtistes(){            
-            // Obtenir Firestore
-            const firestore = getFirestore();
-            // Base de données (collection)  document pays
-            const dbArtistes = collection(firestore, "Artistes");
-            // Liste des participants triés
-            // query permet de faire une requête sur Firebase
-            // notement pour filtrer, trier ... des données
-            //orderBy permet de préciser sur quel élément trier, et dans quel ordre
-            // ici le nom du pays par ordre croissant (asc)            
-            const q = query(dbArtistes, orderBy('Nom', 'asc'));
-            // Récupération de la liste des pays à partir de la query
-            // La liste est synchronisée
-            await onSnapshot(q, (snapshot) => {
-                this.listeArtistes = snapshot.docs.map(doc => (
-                    {id:doc.id, ...doc.data()}
-                ))  
-console.log("Liste des Artistes", this.listeArtistes);      
-            })      
-        },
-
-        previewImage: function(event) {
-            // Mise à jour de la photo du participant
-            this.file = this.$refs.file.files[0];
-            // Récupérer le nom du fichier pour la photo du participant
-            this.Artistes.Image = this.file.Nom;
-            // Reference to the DOM input element
-            // Reference du fichier à prévisualiser
-            var input = event.target;
-            // On s'assure que l'on a au moins un fichier à lire
-            if (input.files && input.files[0]) {
-                // Creation d'un filereader
-                // Pour lire l'image et la convertir en base 64
-                var reader = new FileReader();
-                // fonction callback appellée lors que le fichier a été chargé
-                reader.onload = (e) => {
-                    // Read image as base64 and set to imageData
-                    // lecture du fichier pour mettre à jour 
-                    // la prévisualisation
-                    this.ImageData = e.target.result;
-                }
-                // Demarrage du reader pour la transformer en data URL (format base 64) 
-                reader.readAsDataURL(input.files[0]);        
+    export default {   
+        data(){
+            return{                
+                user:{         
+                    email:null,
+                    password:null
+                },
+                message:null, 
+                Nom:null, 
+                listeArtistesSynchro:[] ,
+                filter:''
             }
         },
 
-        async createArtistes(){
-            // Obtenir storage Firebase
-            const storage = getStorage();
-            // Référence de l'image à uploader
-            const refStorage = ref(storage, 'Artistes/'+this.Artistes.Image);
-            // Upload de l'image sur le Cloud Storage
-            await uploadString(refStorage, this.imageData, 'data_url').then((snapshot) => {
-                console.log('Uploaded a base64 string');
-                
-                // Création du participant sur le Firestore
-                const db = getFirestore();
-                const docRef = addDoc(collection(db, 'Artistes'), this.Artistes );
+        components: {
+          Bouton,
+          Save
+        }, 
+
+          computed:{
+            orderByName:function(){
+            return this.listeArtistesSynchro.sort(function(a,b){
+                if(a.Nom < b.Nom) return -1;
+                if(a.Nom > b.Nom) return 1;
+                return 0;
             });
-            // redirection sur la liste des participants
-            this.$router.push('/Artistes');            
+            },
+            filterByName:function(){
+            if(this.filter.length > 0){
+                let filter = this.filter.toLowerCase();
+                return this.orderByName.filter(function(Artistes){
+                return Artistes.nom.toLowerCase().includes(filter);
+                })
+            }else{
+                return this.orderByName;
+            }
+            }
+        },
+
+        mounted(){ 
+            
+                let user = getAuth().currentUser;
+                if(user){
+                    this.user = user;
+                    this.message = "User déjà connecté : "+this.user.email;
+                }else{
+                    this.message = "User non connecté : "+this.user.email;
+                }
+
+           
+            this.getArtistesSynchro();
+        },
+
+        methods:{
+
+            async getArtistesSynchro(){
+                const firestore = getFirestore();
+                const dbArtistes= collection(firestore, "Artistes");
+                const query = await onSnapshot(dbArtistes, (snapshot) =>{
+                this.listeArtistesSynchro = snapshot.docs.map(doc => ({id:doc.id, ...doc.data()}));
+                })
+            },
+
+            async createArtistes(){
+                const firestore = getFirestore();
+                const dbArtistes= collection(firestore, "Artistes");
+                const docRef = await addDoc(dbArtistes,{
+                    Nom: this.Nom
+                })
+                //console.log('document créé avec le id : ', docRef.id);
+             },
+
+            async updateArtistes(Artistes){
+                const firestore = getFirestore();
+                const docRef = doc(firestore, "Artistes", Artistes.id);
+                await updateDoc(docRef, {
+                    Nom: Artistes.Nom
+                }) 
+             },
+
+            async deleteArtistes(Artistes){
+                const firestore = getFirestore();
+                const docRef = doc(firestore, "Artistes", Artistes.id);
+                await deleteDoc(docRef);
+             },
+
         }
     }
-
-
-
-
 </script>
 
 
