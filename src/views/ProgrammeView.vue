@@ -16,21 +16,21 @@
 
         <form class="py-3">
             <div>
-            <input type="text" v-model='Nom' required />
+            <input type="text" v-model='Nom' required class="p-1" />
             <Bouton class="mx-2 items-center" type="button" @click='createArtistes()' title="Créé">
                 Créé
             </Bouton>
             </div>
         </form>
         
-          <input type="text" v-model="filter" placeholder="Filtre"/>
+          <input type="text" v-model="filter" placeholder="Recherche" class="p-1"/>
           <Bouton class="mt-2 mb-6" type="button"  title="Filtrage">
               Recherche
           </Bouton>   
 
         <form v-for="Artistes in filterByName" :key="Artistes.id">
           <div>
-              <input type="text" class="mx-2 my-2" v-model='Artistes.Nom' required />
+              <input type="text" class="mx-2 my-2 p-1" v-model='Artistes.Nom' required />
               <Bouton type="button" class="mx-2 my-2" @click="updateArtistes(Artistes)" title="Modifier">
               Modifier
               </Bouton>
