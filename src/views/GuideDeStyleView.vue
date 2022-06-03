@@ -11,9 +11,9 @@
         </div>
         <div>
             <h2 class="pt-10 pb-4">Quelques images</h2>
-            <img class="shrink-0 w-80 h-auto rounded-lg" src="/images-artistes-15juillet/KapBambino.png">
-            <img class="shrink-0 w-80 h-auto rounded-lg" src="/images-artistes-15juillet/BlueStahli.png">
-            <img class="shrink-0 w-80 h-auto rounded-lg" src="/images-artistes-15juillet/CrystalCastles.png">
+            <img class="shrink-0 w-80 h-auto rounded-lg" src="/images-artistes-15juillet/KapBambino.jpg">
+            <img class="shrink-0 w-80 h-auto rounded-lg" src="/images-artistes-15juillet/BlueStahli.jpg">
+            <img class="shrink-0 w-80 h-auto rounded-lg" src="/images-artistes-15juillet/CrystalCastles.jpg">
         </div>
         <div>
             <h2 class="pt-10 pb-4">Quelques Cartes d'artiste</h2>
