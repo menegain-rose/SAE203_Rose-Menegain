@@ -13,7 +13,6 @@
         </div>
 
 
-<p>test</p>
 
         <form class="py-3">
             <div>
@@ -23,9 +22,9 @@
             </Bouton>
             </div>
         </form>
-
-          <input type="text" v-model="filter"/>
-          <Bouton class="mt-2 mb-6" type="button"  title="Recherche">
+        
+          <input type="text" v-model="filter" placeholder="Filtre"/>
+          <Bouton class="mt-2 mb-6" type="button"  title="Filtrage">
               Recherche
           </Bouton>   
 
@@ -263,11 +262,12 @@ import {
                 return 0;
             });
             },
-            filterByName:function(){
+            filterByName:function(){ 
+              console.log ("FilterByName")
             if(this.filter.length > 0){
                 let filter = this.filter.toLowerCase();
                 return this.orderByName.filter(function(Artistes){
-                return Artistes.nom.toLowerCase().includes(filter);
+                return Artistes.Nom.toLowerCase().includes(filter);
                 })
             }else{
                 return this.orderByName;
